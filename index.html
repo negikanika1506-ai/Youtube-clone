@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="nav-left">
+        <i class="fas fa-bars menu-btn"></i>
+
+        <div class="logo">
+            <i class="fab fa-youtube"></i>
+            <span>YouTube</span>
+        </div>
+    </div>
+
+    <div class="search-container">
+
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="Search">
+
+        <button>
+            <i class="fas fa-search"></i>
+        </button>
+
+        <div class="mic">
+            <i class="fas fa-microphone"></i>
+        </div>
+
+    </div>
+
+    <div class="nav-right">
+
+        <i class="fas fa-video"></i>
+
+        <i class="fas fa-bell"></i>
+
+        <img
+        src="https://i.pravatar.cc/100?img=12"
+        alt="profile">
+
+    </div>
+
+</header>
+
+<aside class="sidebar" id="sidebar">
+
+    <div class="side-link active">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+    </div>
+
+    <div class="side-link">
+        <i class="fas fa-bolt"></i>
+        <span>Shorts</span>
+    </div>
+
+    <div class="side-link">
+        <i class="fas fa-play-circle"></i>
+        <span>Subscriptions</span>
+    </div>
+
+    <div class="side-link">
+        <i class="fas fa-user"></i>
+        <span>You</span>
+    </div>
+
+    <div class="side-link">
+        <i class="fas fa-history"></i>
+        <span>History</span>
+    </div>
+
+    <div class="side-link">
+        <i class="fas fa-fire"></i>
+        <span>Trending</span>
+    </div>
+
+    <div class="side-link">
+        <i class="fas fa-gamepad"></i>
+        <span>Gaming</span>
+    </div>
+
+</aside>
+
+<main class="main-content">
+
+    <div class="categories">
+
+        <button class="category active">All</button>
+        <button class="category">Music</button>
+        <button class="category">Gaming</button>
+        <button class="category">Programming</button>
+        <button class="category">AI</button>
+        <button class="category">Sports</button>
+        <button class="category">Live</button>
+        <button class="category">News</button>
+
+    </div>
+
+    <div class="video-grid" id="videoGrid">
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

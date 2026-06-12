@@ -1,0 +1,260 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+height:60px;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 20px;
+position:fixed;
+top:0;
+background:#0f0f0f;
+z-index:1000;
+}
+
+.nav-left{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.menu-btn{
+font-size:22px;
+cursor:pointer;
+}
+
+.logo{
+display:flex;
+align-items:center;
+font-size:24px;
+font-weight:bold;
+}
+
+.logo i{
+color:red;
+font-size:32px;
+}
+
+.logo span{
+margin-left:6px;
+}
+
+.search-container{
+width:50%;
+display:flex;
+align-items:center;
+}
+
+.search-container input{
+flex:1;
+padding:12px;
+background:#121212;
+border:1px solid #303030;
+color:white;
+border-radius:25px 0 0 25px;
+outline:none;
+}
+
+.search-container button{
+padding:12px 25px;
+border:none;
+background:#222;
+color:white;
+cursor:pointer;
+border-radius:0 25px 25px 0;
+}
+
+.mic{
+margin-left:10px;
+background:#222;
+width:42px;
+height:42px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+cursor:pointer;
+}
+
+.nav-right{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.nav-right img{
+width:35px;
+height:35px;
+border-radius:50%;
+}
+
+.nav-right i{
+cursor:pointer;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+position:fixed;
+left:0;
+top:60px;
+width:240px;
+height:100vh;
+background:#0f0f0f;
+padding-top:15px;
+overflow:auto;
+}
+
+.side-link{
+display:flex;
+align-items:center;
+gap:20px;
+padding:12px 20px;
+margin:5px 10px;
+border-radius:10px;
+cursor:pointer;
+}
+
+.side-link:hover{
+background:#272727;
+}
+
+.side-link.active{
+background:#272727;
+}
+
+/* MAIN */
+
+.main-content{
+margin-left:240px;
+margin-top:70px;
+padding:20px;
+}
+
+.categories{
+display:flex;
+gap:10px;
+overflow-x:auto;
+margin-bottom:25px;
+}
+
+.category{
+padding:8px 15px;
+border:none;
+border-radius:10px;
+background:#272727;
+color:white;
+cursor:pointer;
+}
+
+.category.active{
+background:white;
+color:black;
+}
+
+/* VIDEO GRID */
+
+.video-grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fill,minmax(340px,1fr));
+gap:25px;
+}
+
+.video-card{
+cursor:pointer;
+transition:0.3s;
+}
+
+.video-card:hover{
+transform:scale(1.02);
+}
+
+.thumbnail{
+position:relative;
+}
+
+.thumbnail img{
+width:100%;
+border-radius:12px;
+}
+
+.duration{
+position:absolute;
+right:10px;
+bottom:10px;
+background:black;
+padding:3px 7px;
+font-size:12px;
+border-radius:4px;
+}
+
+.video-info{
+display:flex;
+margin-top:10px;
+}
+
+.channel-icon{
+width:40px;
+height:40px;
+border-radius:50%;
+margin-right:12px;
+}
+
+.video-details h3{
+font-size:15px;
+line-height:1.4;
+margin-bottom:5px;
+}
+
+.video-details p{
+font-size:13px;
+color:#aaa;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.sidebar{
+display:none;
+}
+
+.main-content{
+margin-left:0;
+}
+
+.search-container{
+width:60%;
+}
+
+}
+
+@media(max-width:600px){
+
+.search-container{
+width:55%;
+}
+
+.logo span{
+display:none;
+}
+
+.video-grid{
+grid-template-columns:1fr;
+}
+
+}
